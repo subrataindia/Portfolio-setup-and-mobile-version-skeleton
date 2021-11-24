@@ -1,9 +1,11 @@
-*{
-  --main-color: #172B4D;
-  --secondary-color:#36B37E;
-  margin:0px;
-  padding:0px;
+* {
+  margin: 0;
+  padding: 0;
+
+  --main-color: "#172b4d";
+  --secondary-color: #36b37e;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--main-color);
@@ -12,36 +14,42 @@ body {
   justify-content: space-between;
   height: 100vh;
   background-image: url("mobile.png");
-  background-size:  auto 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center 50px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 1 auto;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
+
 main {
   display: flex;
   flex-direction: column;
   padding: 64px 24px;
   justify-content: space-between;
-  text-align: center;  
+  text-align: center;
   flex: 1 1 auto;
   overflow-y: scroll;
 }
+
 .profession {
   color: var(--secondary-color);
 }
-main > p{
+
+main > p {
   font-size: 20px;
   line-height: 28px;
 }
+
 main > h1 {
   font-size: 40px;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -49,15 +57,17 @@ footer {
   flex: 1 1 auto;
 }
 
-.fa-chevron-down{
+.fa-chevron-down {
   border: 1px solid rgb(161, 163, 161);
   border-radius: 50%;
   padding: 10px;
 }
+
 .socialIcons > i {
   padding: 10px;
   margin-bottom: 30px;
 }
+
 .socialIcons > i:hover {
   color: var(--secondary-color);
 }
