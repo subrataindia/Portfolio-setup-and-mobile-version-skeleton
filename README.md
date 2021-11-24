@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# Portfolio setup and mobile version skeleton
 
-> This is first Microverse project. 
+> This is my second Microverse project. This project is created to learn and understand about use of Figma and Flexbox.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,26 +10,23 @@
 
 - HTML
 - CSS
+- Figma
 
 ## Learning Objectives
 
-- Create branches with different base branches.
-- Understand the concept of version control.
-- Follow Gitflow.
-- Open pull requests in GitHub.
-- Write descriptive, easy to understand commit messages.
-- Write short, detailed, easy to understand descriptions of pull requests.
-- Write a descriptive and easy to understand README in business English for every project submitted.
-- Demonstrate an ability to submit a project for code review.
+- Understand how to parse a Figma design to create a UI.
+- Flexbox to place elements in the page.
+- Build a personal portfolio site.
+- Use images and backgrounds to enhance the look of the websit
 
 
 ## Author
 
 👤 **Subrat Dash**
 
-- GitHub: [@githubhandle](https://github.com/subratsir)
-- Twitter: [@twitterhandle](https://twitter.com/SubratSirIndia)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/subratsir)
+- GitHub: [@subratsir](https://github.com/subratsir)
+- Twitter: [@SubratSirIndia](https://twitter.com/SubratSirIndia)
+- LinkedIn: [subratsir](https://linkedin.com/in/subratsir)
 
 
 ## 🤝 Contributing
