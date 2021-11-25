@@ -5,7 +5,7 @@
   --social-icons: #505f79;
   --border-color: #d0d9d4;
   --card-background: #ebf0ee;
-  --white: #ffffff;
+  --white: #fff;
   --list-item-title: #344563;
   --button-pressed: #008552;
 }
@@ -22,7 +22,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-
   padding: 20px;
 }
 
@@ -51,7 +50,7 @@ nav {
   background-image: url("mobile.png");
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center center;  
+  background-position: center center;
 }
 
 .profession {
@@ -94,6 +93,10 @@ nav {
 
 .socialIcons li {
   list-style-type: none;
+}
+
+.lists > li > a {
+  text-decoration: none;
 }
 
 .socialIcons a:hover {
@@ -140,7 +143,7 @@ nav {
   flex-grow: 1;
 }
 
-.cardHeading{
+.cardHeading {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -150,10 +153,10 @@ nav {
 .cardAction {
   width: auto;
   height: 48px;
-  padding: 0px 12px;
+  padding: 0 12px;
   border-radius: 4px;
   background-color: var(--secondary-color);
-  color:var(--white);
+  color: var(--white);
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
@@ -178,7 +181,7 @@ nav {
 }
 
 .cardTags li {
-  background-color: var(--card-background) ;
+  background-color: var(--card-background);
   padding: 8px 12px;
 }
 
@@ -191,7 +194,7 @@ nav {
 }
 
 #aboutMself > * {
-  margin: 25px 0px;
+  margin: 25px 0;
 }
 
 .lists {
@@ -200,7 +203,7 @@ nav {
 }
 
 .lists > li {
-  margin-bottom:24px;
+  margin-bottom: 24px;
   background: var(--card-background);
   border: 1px solid var(--border-color);
   box-sizing: border-box;
@@ -213,6 +216,7 @@ nav {
   grid-template-rows: 3fr 1fr 2fr;
   row-gap: 24px;
 }
+
 .listItemImage {
   display: flex;
   align-items: center;
@@ -220,22 +224,6 @@ nav {
   background-image: url(icon_back.svg);
   background-repeat: no-repeat;
   background-position-x: center;
-}
-
-.listItemTags {
-  display: flex;
-  align-self: flex-start;
-}
-
-.listItemTitle {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--list-item-title);
-}
-
-.lists > li > a {
-  text-decoration: none; 
 }
 
 .listItemTags {
@@ -247,9 +235,17 @@ nav {
   list-style-type: none;
   column-gap: 8px;
   align-items: center;
+  align-self: flex-start;
+}
+
+.listItemTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--list-item-title);
 }
 
 .listItemTags li {
-  background-color: var(--white) ;
+  background-color: var(--white);
   padding: 12px;
 }
