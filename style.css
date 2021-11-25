@@ -1,0 +1,94 @@
+:root {
+  --nav-header: #28352f;
+  --main-color: #172b4d;
+  --secondary-color: #36b37e;
+  --social-icons: #505f79;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url("mobile.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+header > a {
+  text-decoration: none;
+  color: var(--nav-header);
+}
+
+nav {
+  color: var(--nav-header);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 24px;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1 1 100%;
+}
+
+.profession {
+  color: var(--secondary-color);
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 30px;
+}
+
+#main > h1 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.fa-chevron-down {
+  border: 1px solid rgb(161, 163, 161);
+  border-radius: 50%;
+  padding: 20px;
+  color: var(--nav-header);
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.socialIcons a {
+  color: var(--social-icons);
+  padding: 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.socialIcons li {
+  list-style-type: none;
+}
+
+.socialIcons a:hover {
+  color: var(--secondary-color);
+}
