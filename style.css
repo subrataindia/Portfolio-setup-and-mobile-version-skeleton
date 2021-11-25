@@ -1,9 +1,10 @@
+:root {
+  --main-color: "#172b4d";
+  --secondary-color: #36b37e;
+}
 * {
   margin: 0;
   padding: 0;
-
-  --main-color: "#172b4d";
-  --secondary-color: #36b37e;
 }
 
 body {
