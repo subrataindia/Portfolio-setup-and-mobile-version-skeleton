@@ -191,6 +191,9 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-image: url(aboutme-back.png), url(about-me-back2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -20px, right;
 }
 
 #aboutMself > * {
