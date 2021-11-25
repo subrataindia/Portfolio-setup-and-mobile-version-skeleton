@@ -1,6 +1,8 @@
 :root {
-  --main-color: "#172b4d";
+  --nav-header: #28352f;
+  --main-color: #172b4d;
   --secondary-color: #36b37e;
+  --social-icons: #505F79;
 }
 * {
   margin: 0;
@@ -18,57 +20,64 @@ body {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center 50px;
+  padding: 20px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex: 1 1 auto;
-  padding: 0 20px;
 }
-
-main {
+header > a {
+  text-decoration: none;
+  color: var(--nav-header);
+}
+nav {
+  color: var(--nav-header);
+}
+#main {
   display: flex;
   flex-direction: column;
   padding: 64px 24px;
   justify-content: space-between;
   text-align: center;
-  flex: 1 1 auto;
-  overflow-y: scroll;
+  flex: 1 1 100%;
 }
 
 .profession {
   color: var(--secondary-color);
 }
 
-main > p {
+#main > p {
   font-size: 20px;
   line-height: 28px;
 }
 
-main > h1 {
+#main > h1 {
   font-size: 40px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 auto;
+  line-height: 52px;
 }
 
 .fa-chevron-down {
   border: 1px solid rgb(161, 163, 161);
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
+  color: var(--nav-header);
 }
-
-.socialIcons > i {
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  color: var(--social-icons);
   padding: 10px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+.socialIcons li {
+  list-style-type: none;
 }
 
-.socialIcons > i:hover {
+.socialIcons a:hover {
   color: var(--secondary-color);
 }
