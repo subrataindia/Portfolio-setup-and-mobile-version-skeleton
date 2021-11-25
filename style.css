@@ -2,8 +2,9 @@
   --nav-header: #28352f;
   --main-color: #172b4d;
   --secondary-color: #36b37e;
-  --social-icons: #505F79;
+  --social-icons: #505f79;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,13 +29,16 @@ header {
   justify-content: space-between;
   flex: 1 1 auto;
 }
+
 header > a {
   text-decoration: none;
   color: var(--nav-header);
 }
+
 nav {
   color: var(--nav-header);
 }
+
 #main {
   display: flex;
   flex-direction: column;
@@ -46,11 +50,14 @@ nav {
 
 .profession {
   color: var(--secondary-color);
+  font-size: 40px;
+  line-height: 52px;
 }
 
-#main > p {
+.description {
   font-size: 20px;
   line-height: 28px;
+  padding-top: 30px;
 }
 
 #main > h1 {
@@ -64,16 +71,20 @@ nav {
   padding: 20px;
   color: var(--nav-header);
 }
+
 .socialIcons {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
+
 .socialIcons a {
   color: var(--social-icons);
   padding: 10px;
   margin-bottom: 30px;
   text-decoration: none;
 }
+
 .socialIcons li {
   list-style-type: none;
 }
