@@ -6,6 +6,8 @@
   --border-color: #d0d9d4;
   --card-background: #ebf0ee;
   --white: #ffffff;
+  --list-item-title: #344563;
+  --button-pressed: #008552;
 }
 
 * {
@@ -146,9 +148,9 @@ nav {
 }
 
 .cardAction {
-  width: 122px;
+  width: auto;
   height: 48px;
-  padding: 2px;
+  padding: 0px 12px;
   border-radius: 4px;
   background-color: var(--secondary-color);
   color:var(--white);
@@ -159,6 +161,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.cardAction:active {
+  background-color: var(--button-pressed);
 }
 
 .cardTags {
@@ -186,4 +192,64 @@ nav {
 
 #aboutMself > * {
   margin: 25px 0px;
+}
+
+.lists {
+  list-style-type: none;
+  width: 100%;
+}
+
+.lists > li {
+  margin-bottom:24px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.listItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 2fr;
+  row-gap: 24px;
+}
+.listItemImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(icon_back.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.listItemTags {
+  display: flex;
+  align-self: flex-start;
+}
+
+.listItemTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--list-item-title);
+}
+
+.lists > li > a {
+  text-decoration: none; 
+}
+
+.listItemTags {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.listItemTags li {
+  background-color: var(--white) ;
+  padding: 12px;
 }
