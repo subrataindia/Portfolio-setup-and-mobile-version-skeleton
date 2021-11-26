@@ -22,13 +22,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  padding: 20px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   flex: 1 1 auto;
+  padding: 20px;
 }
 
 header > a {
@@ -48,7 +48,7 @@ nav {
   text-align: center;
   flex: 1 1 100%;
   background-image: url("mobile.png");
-  background-size: auto 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -84,7 +84,7 @@ nav {
   padding-top: 20px;
 }
 
-.socialIcons a {
+.socialIcons > li > a {
   color: var(--social-icons);
   padding: 10px;
   margin-bottom: 30px;
@@ -95,7 +95,7 @@ nav {
   list-style-type: none;
 }
 
-.lists > li > a {
+.lists a {
   text-decoration: none;
 }
 
@@ -127,6 +127,7 @@ nav {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   height: 474px;
+  margin:24px 24px 0 24px;
 }
 
 .cardImage {
@@ -189,15 +190,29 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   background-image: url(aboutme-back.png), url(about-me-back2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position-x: -20px, right;
+  background-position-x: -50px, right;
+  background-position-y: -10px, 0;
+  order: 1;
+  padding: 20px;
 }
 
 #aboutMself > * {
-  margin: 25px 0;
+  margin: 10px 0;
+}
+
+.aboutMeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 45px 0;
+}
+
+.aboutMeDiv > * {
+  margin: 10px 0;
 }
 
 .lists {
@@ -229,6 +244,13 @@ nav {
   background-position-x: center;
 }
 
+.listItemTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--list-item-title);
+}
+
 .listItemTags {
   font-size: 12px;
   line-height: 16px;
@@ -241,14 +263,19 @@ nav {
   align-self: flex-start;
 }
 
-.listItemTitle {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--list-item-title);
-}
-
-.listItemTags li {
+.listItemTags > li {
   background-color: var(--white);
   padding: 12px;
+}
+
+.aboutMeTitle {
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center; 
+
+}
+
+.aboutMeDescription {
+  font-size: 20px;
+  line-height: 28px;
 }
