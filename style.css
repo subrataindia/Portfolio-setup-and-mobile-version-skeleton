@@ -8,6 +8,7 @@
   --white: #fff;
   --list-item-title: #344563;
   --button-pressed: #008552;
+  --tag-text-color: #3A4A42;
 }
 
 * {
@@ -206,7 +207,6 @@ nav {
   background-repeat: no-repeat, no-repeat;
   background-position-x: -50px, right;
   background-position-y: -10px, 0;
-  order: 1;
   padding: 20px;
 }
 
@@ -282,6 +282,23 @@ nav {
   border-radius: 4px;
   padding: 12px;
 }
+
+.listItemTags > li:hover {
+  box-shadow: 0 8px 16px rgba(27, 29, 28, 0.24);  
+}
+
+.listItemTags > li > a {
+  color : var(--tag-text-color);
+}
+
+.listItemTags > li > a:hover {
+  color : var(--tag-text-color);
+}
+
+.listItemTags > li > a:active {
+  color : var(--tag-text-color);
+}
+
 
 .aboutMeTitle {
   font-size: 40px;
