@@ -84,6 +84,14 @@ nav {
   padding-top: 20px;
 }
 
+.lists a {
+  text-decoration: none;
+}
+
+.cardTags a {
+  text-decoration: none;
+}
+
 .socialIcons > li > a {
   color: var(--social-icons);
   padding: 10px;
@@ -93,10 +101,6 @@ nav {
 
 .socialIcons li {
   list-style-type: none;
-}
-
-.lists a {
-  text-decoration: none;
 }
 
 .socialIcons a:hover {
@@ -127,7 +131,7 @@ nav {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   height: 474px;
-  margin:24px 24px 0 24px;
+  margin: 24px 24px 0 24px;
 }
 
 .cardImage {
@@ -170,9 +174,10 @@ nav {
 .cardAction:active {
   background-color: var(--button-pressed);
 }
+
 .cardAction:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
-  border-radius: 4px;  
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
 }
 
 .cardTags {
@@ -192,10 +197,6 @@ nav {
   padding: 8px 12px;
 }
 
-.cardTags a{
-  text-decoration: none;
-}
-
 #aboutMself {
   display: flex;
   flex-direction: column;
@@ -209,6 +210,10 @@ nav {
   padding: 20px;
 }
 
+.aboutMeDiv > * {
+  margin: 10px 0;
+}
+
 #aboutMself > * {
   margin: 10px 0;
 }
@@ -219,10 +224,6 @@ nav {
   align-items: center;
   text-align: center;
   margin: 45px 0;
-}
-
-.aboutMeDiv > * {
-  margin: 10px 0;
 }
 
 .lists {
@@ -285,8 +286,7 @@ nav {
 .aboutMeTitle {
   font-size: 40px;
   line-height: 52px;
-  text-align: center; 
-
+  text-align: center;
 }
 
 .aboutMeDescription {
