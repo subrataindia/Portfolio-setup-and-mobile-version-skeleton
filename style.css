@@ -152,6 +152,8 @@ nav {
 .cardTags li {
   background-color: var(--card-background);
   padding: 8px 12px;
+  float: left;
+  margin-right: 10px;
 }
 
 .listItemTags > li:hover {
